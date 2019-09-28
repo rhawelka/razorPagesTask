@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-3">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+    @*Simgle statement block*@
+    @{ var myMessage = "hello world";}
+    
+    <p> the value is: @myMessage</p>
+    
+    @*multi statemnet block*@
+    @{
+        var txt = "";
+        if(DateTime.Now.Hour > 12)
+        {txt = "Good Evening";}
+        else
+        {txt = "Good Morning";}
+    }
+    
+<p> the greeetings: @txt</p>
+    
+    
+
+
+</div>
+
+
